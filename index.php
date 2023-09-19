@@ -1,9 +1,7 @@
-
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-            <titel>membuat login multi user level dengan php dan MySQLi -  www.malasngoding.com</titel>
-              <link rel="stylesheet" type="text/css" href="style. css">
+              <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -40,4 +38,4 @@ if(isset($_GET['pesan'])) {
    </div>
 
 </body>
-  </html>
+</html>
