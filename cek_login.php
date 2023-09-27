@@ -45,6 +45,14 @@ $SESSION['level'] = "pengurus";
 //alihkan ke halaman dashboard pengurus
 header("location:halaman_pengurus.php");
 
+// cek jika user login sebagai pengurus
+}else if($data['level']=="halamansiswa"){
+// buat session login dan username
+$SESSION['username'] = $username;
+$SESSION['level'] = "halamansiswa";
+//alihkan ke halaman dashboard pengurus
+header("location:halamansiswa.php");
+
 }else{
 
 // alihkan ke halaman login kembali
