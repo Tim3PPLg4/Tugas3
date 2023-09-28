@@ -1,26 +1,26 @@
-<!DOCTYPE html>
+<!IDOCTYPE html>
 <html>
 <head>
-    <title>Halaman siswa</title>
+    <title>halaman siswa</title>
 </head>
 <body>
-    <?php
+    <?php  
     session_start();
 
     // cek apakah yang mengakses halaman ini sudah login
-    if($_SESSION['level']==""){
-        header("location:index.php?pesan=gagal");
-    }
+if($_SESSION['level']==""){
+header("location:index.php?pesan=gagal");
+}
 
- ?>
- <h1>halaman pegawai</h1>
+?>
+<h1>halaman pegawai</h1>
 
- <p>Halo <b><?php echo $_SESSION['username']; ?></b> anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
- <a href="logout.php">LOGOUT</a>
+<p>hallo <b><?php echo $_SESSION['username']; ?></b> anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+<a herf="logout.php">LOGOUT</a>
 
- <br/>
- <br/>
+<br/>
+<br/>
 
- <a>membuat login multi level dengan php</a>
+<a>membuat login multi level dengan php</a>
 </body>
 </html>
